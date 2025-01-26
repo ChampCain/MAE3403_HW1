@@ -1,5 +1,7 @@
 # region imports
-from Die import #JES MISSING CODE
+from Die import rollFairDie
+from Die import rollUnFairDie
+
 # endregion
 
 # region functions
