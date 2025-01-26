@@ -15,10 +15,10 @@ def main():
     scores = [0]*6  # create a list with 6 elements/items initialized to 0's
     n = 1000  # how many times to roll the die
     for i in range(n):  # each time through the loop, roll die and increment a score
-        score = Die.rollFairDie()  # score = 1 to 6
+        score = rfd()  # score = 1 to 6
         scores[roll - 1] += 1  # increment score-1 item b/c 0 indexing start
     # print the result
-            print(f"After rolling the die {n} times:")
+        print(f"After rolling the die {n} times:")
         for i in range(6):
             probability = scores[i] / n
     print(f"Probability of rolling a {i + 1}: {probability:.4f}")
@@ -79,5 +79,6 @@ if __name__ == "__main__":
     main()
     main2()
     main3()
+
 
 
